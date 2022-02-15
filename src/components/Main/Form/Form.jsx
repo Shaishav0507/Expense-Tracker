@@ -75,7 +75,7 @@ const NewTransactionForm = () => {
         createTransaction();
       }
     }
-  }, [segment]);
+  }, [segment]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   const selectedCategories = formData.type === 'Income' ? incomeCategories : expenseCategories;
 
